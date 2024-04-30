@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         "outfit": ["Outfit", 'sans-serif'],
+        "helvetica" : ['Helvetica Neue','sans-serif'],
+      
     },
   },
   plugins: [],
