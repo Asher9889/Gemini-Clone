@@ -6,6 +6,7 @@ import Cards from "./Cards";
 import Input from "./Input";
 import Terms from "./Terms";
 import { DataContext } from "../../context/Context";
+import loader from "../../assets/loader.png"
 
 const MainContent = () => {
   const { getResult, output, previousInput, loading } = useContext(DataContext);
@@ -44,25 +45,11 @@ const MainContent = () => {
                       src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png" alt="" />
                     </div>
 
-                    <div  className=" w-[60%] h-20  ">
-                      <div className="w-full h-5  rounded-md bg-gradient-to-r from-[#4b90ff] to-[#ff5546]" style={{
-                        animationName: "loading",
-                        animationDirection: "linear",
-                        animationIterationCount: "infinite",
-                        animationDuration: "5s"
-                      }}></div>
-                      <div style={{
-                        animationName: "loading",
-                        animationDirection: "ease",
-                        animationIterationCount: "infinite",
-                        animationDuration: "7s"
-                      }} className="w-full h-5 mt-2  rounded-md bg-gradient-to-r from-[#4b90ff] to-[#ff5546] "></div>
-                      <div style={{
-                        animationName: "loading",
-                        animationDirection: "ease-out",
-                        animationIterationCount: "infinite",
-                        animationDuration: "5s"
-                      }} className="w-full h-5 mt-2  rounded-md bg-gradient-to-r from-[#4b90ff] to-[#ff5546]  "></div   >
+                    <div  className=" w-[80%] h-20  ">
+                      <div className="colorSlide" ></div>
+                      <div className="colorSlide"></div>
+                      <div className="colorSlide"></div   >
+                      {/* <img src={loader} alt="" /> */}
                     </div>
                   </div>
                 </>

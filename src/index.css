@@ -1,11 +1,10 @@
-
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .output::-webkit-scrollbar {
   background-color: transparent;
-  width: 8px;
-  
-  
+  width: 8px; 
 }
 .output::-webkit-scrollbar-thumb {
   background-color: rgb(236, 235, 235);
@@ -14,7 +13,6 @@
 .recent::-webkit-scrollbar {
   background-color: transparent;
   width: 8px;
-  
 }
 .recent::-webkit-scrollbar-thumb {
   background-color: rgb(248, 248, 248);
@@ -24,9 +22,7 @@
 .main::-webkit-scrollbar {
   background-color: transparent;
   width: 8px;
-  display: none;
-  
-  
+  display: none;  
 }
 .main::-webkit-scrollbar-thumb {
   background-color: transparent;
@@ -63,8 +59,7 @@
 
 
 
-@tailwind components;
-@tailwind utilities;
+
 
 
 
@@ -117,4 +112,27 @@ body,html{
   }
 }
 
-
+@keyframes loader {
+  0%{
+    background-position: -1800px 0px;
+  }
+  100%{
+    background-position: 1800px 0px;
+  }
+}
+.colorSlide{
+  width: 100%;
+  margin-bottom: 10px;
+  height: 20px;
+  background: rgb(121,235,239);
+  background: linear-gradient(152deg, rgba(121,235,239,0.38699229691876746) 0%, rgba(121,235,239,0.3029586834733894) 53%, rgba(211,223,222,0) 100%);  border-radius: 5px;
+  animation-name: loader;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+}
+.colorSlide:nth-child(2){
+  animation-delay: 0.2s;
+}
+.colorSlide:nth-child(3){
+  animation-delay: 0.4s;
+}
